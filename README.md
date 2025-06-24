@@ -20,15 +20,14 @@ A modern eCommerce bookstore web application built with Laravel and Tailwind CSS
 ## 📸 Screenshots
 
 _
-### Product Grid
-![Product Grid](assets/font.png)
+### Home page
+![landing page Screenshot](public/images/admin.png)
 
 ### Product Details
-![Product Details](assets/view.png)
+![prodcut view  Screenshot](public/images/view.png)
 
-### Cart
-![Cart](assets/cart.png)_
-
+### login
+![login Screenshot](public/images/login.png)
 
 ## Admin Panel
 
@@ -36,7 +35,8 @@ _
 
 
 ### Cart
-![Cart](assets/login.png)_
+![cart Screenshot](public/images/cart.png)
+
 
 
 ## 🛠️ Tech Stack
