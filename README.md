@@ -21,7 +21,7 @@ A modern eCommerce bookstore web application built with Laravel and Tailwind CSS
 
 _
 ### Home page
-![landing page Screenshot](public/images/admin.png)
+![landing page Screenshot](public/images/font.png)
 
 ### Product Details
 ![prodcut view  Screenshot](public/images/view.png)
