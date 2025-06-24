@@ -30,8 +30,9 @@ _
 ![Cart](assets/cart.png)_
 
 
-### Cart
-![Cart] public/images/admin.png
+## Admin Panel
+
+![Admin Screenshot](public/images/admin.png)
 
 
 ### Cart
