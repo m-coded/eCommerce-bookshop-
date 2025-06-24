@@ -72,32 +72,31 @@
 
 </div>
 <!----card container-->
-<div class="container mx-auto px-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="container mx-auto p-4  ">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  ">
     @foreach($pop as $product)
-      <div class=" bg-white shadow rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+      <div class="bg-emerald-900 shadow rounded-lg overflow-hidden hover:shadow-lg transition-shadow text-sm w-40 ">
         <a href="{{ route('product.show', $product->id) }}">
-        <img src="{{ asset('storage/' . $product->image_path) }}" alt="Book cover for {{ $product->description }}" class=" w-full h-48 object-cover p-2">
-        <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">
-            Author: <span class="font-semibold text-gray-800">{{ ucfirst($product->author) }}</span>
-          </p>
-          <p class="font-semibold text-lg mb-2">{{ ucfirst($product->description) }}</p>
-          </a>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-2xl font-bold text-green-600">${{ number_format($product->price, 2) }}</span>
-            <form action="{{ route('cart.add', $product->id) }}" method="POST">
-              @csrf
-            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-semibold flex items-center">
-    <!-- Heroicon cart SVG -->
-    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9V5a3 3 0 016 0v4m-6 9a2 2 0 104 0 2 2 0 00-4 0z"/>
-    </svg>
-    Add to cart
-</button>
-            </form>
+          <img src="{{ asset('storage/' . $product->image_path) }}" alt="Book cover for {{ $product->description }}" class="w-full h-40 object-cover p-4">
+          <div class="p-2">
+            <p class="text-xs text-gray-500 mb-0.5 text-white font-bold">
+              Author: <span class=" text-gray-800 text-white" >{{ ucfirst($product->author) }}</span>
+            </p>
+            <p class="font-semibold text-base mb-1 truncate text-white">{{ ucfirst($product->description) }}</p>
+        </a>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-lg font-bold text-yellow-300">${{ number_format($product->price, 2) }}</span>
+              <form action="{{ route('cart.add', $product->id) }}" method="POST">
+                @csrf
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded font-semibold flex items-center text-xs">
+                  <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9V5a3 3 0 016 0v4m-6 9a2 2 0 104 0 2 2 0 00-4 0z"/>
+                  </svg>
+                  Add
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
       </div>
     @endforeach
   </div>
@@ -105,80 +104,6 @@
 <br>
 <br>
 <!-------->
-<div class="container mx-auto px-4">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    @foreach($pop as $product)
-      <div class=" bg-white shadow rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-        <img src="{{ asset('storage/' . $product->image_path) }}" alt="Book cover for {{ $product->description }}" class=" w-full h-48 object-cover p-2">
-        <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">
-            Author: <span class="font-semibold text-gray-800">{{ ucfirst($product->author) }}</span>
-          </p>
-          <p class="font-semibold text-lg mb-2">{{ ucfirst($product->description) }}</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-2xl font-bold text-green-600">${{ number_format($product->price, 2) }}</span>
-            <form action="{{ route('cart.add', $product->id) }}" method="POST">
-              @csrf
-            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded font-semibold flex items-center">
-    <!-- Heroicon cart SVG -->
-    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9V5a3 3 0 016 0v4m-6 9a2 2 0 104 0 2 2 0 00-4 0z"/>
-    </svg>
-    Add to cart
-</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    @endforeach
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
