@@ -31,7 +31,7 @@ _
 
 
 ### Cart
-![Cart](assets/admin.png)_
+![Cart] public/images/admin.png
 
 
 ### Cart
