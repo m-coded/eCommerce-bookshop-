@@ -19,7 +19,24 @@ A modern eCommerce bookstore web application built with Laravel and Tailwind CSS
 
 ## 📸 Screenshots
 
-_Add screenshots of your product grid, product details page, and cart here to showcase your UI!_
+_
+### Product Grid
+![Product Grid](assets/font.png)
+
+### Product Details
+![Product Details](assets/view.png)
+
+### Cart
+![Cart](assets/cart.png)_
+
+
+### Cart
+![Cart](assets/admin.png)_
+
+
+### Cart
+![Cart](assets/login.png)_
+
 
 ## 🛠️ Tech Stack
 
