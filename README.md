@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="eCommerce Bookshop Logo" width="200"/>
+  <img src="public/images/image.png" alt="eCommerce Bookshop Logo" width="200"/>
 </p>
 
 # eCommerce Bookshop
